@@ -4,6 +4,7 @@
  * @s:string
  * @b:int
  * @n:number
+ * Return: char
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -11,7 +12,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (c = 0; n > 0; n--)
 	{
-		s[c] = 'b';
+		s[c] = b;
 		c++;
 	}
 	return (s);
